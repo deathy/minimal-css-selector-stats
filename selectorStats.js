@@ -26,5 +26,8 @@ function RunSelectorStats() {
             }
         }
     }
+    selector_times.sort(function (a, b) {
+        return b.selector_time - a.selector_time;
+    });
     return result;
 }
